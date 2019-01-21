@@ -1,3 +1,5 @@
+[![Docker pulls](https://img.shields.io/docker/pulls/cumi/mbox.svg )](https://hub.docker.com/r/cumi/mbox)
+
 Mbox
 ====
 
@@ -29,3 +31,15 @@ Use cases
 
     $ ./mbox -i -- wget google.com      : a simple use
     $ ./mbox -n -i -- wget google.com   : no network
+
+Docker
+=========
+
+is important to add  `--security-opt seccomp:unconfined`  for running  `mbox` inside docker-container.
+
+basic mbox dockaer:
+```
+docker run -it --security-opt seccomp:unconfined --rm cumi/mbox
+```
+advance: you could extends  `cumi/mbox` in any project.
+
