@@ -37,7 +37,7 @@ Docker
 
 is important to add  `--security-opt seccomp:unconfined`  for running  `mbox` inside docker-container.
 
-basic mbox dockaer:
+basic mbox docker:
 ```
 docker run -it --security-opt seccomp:unconfined --rm cumi/mbox
 ```
